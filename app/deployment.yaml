@@ -23,7 +23,7 @@ spec:
       containers:
       - name: spring-petclinic
         imagePullPolicy: Always
-        image: quay.io/repository/openshifttest/hello-openshift:latest
+        image: quay.io/repository/openshifttest/hello-openshift:arm-latest
         livenessProbe:
           failureThreshold: 3
           httpGet:
