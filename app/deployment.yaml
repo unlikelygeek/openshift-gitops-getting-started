@@ -11,7 +11,7 @@ metadata:
     app.openshift.io/runtime: java
   name: spring-petclinic
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: spring-petclinic
@@ -23,7 +23,7 @@ spec:
       containers:
       - name: spring-petclinic
         imagePullPolicy: Always
-        image: quay.io/service-binding/spring-petclinic:latest
+        image: quay.io/repository/openshifttest/hello-openshift:latest
         livenessProbe:
           failureThreshold: 3
           httpGet:
